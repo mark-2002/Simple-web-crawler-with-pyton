@@ -10,7 +10,7 @@ def crawl(max_pages):
         for link in soup.findAll('div',{'class': "col-md-9 col-sm-6"}):
             href = link.get('href')
             title = link.string#to getbthe atring in it
-            return print(type(link))
+            return print(href)
             return print(title)
         pages +=1
     
